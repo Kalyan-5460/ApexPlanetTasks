@@ -1,0 +1,107 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: lightcyan;
+  margin: 20px;
+  padding: 0;
+  color: #333;
+}
+
+.main-header {
+  background-color: #ffefd5; 
+  padding: 30px 0;
+  border-bottom: 2px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-header h1,
+.main-header p {
+  margin: 0;
+}
+
+h1 {
+  color: #007BFF;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: solid 1px black;
+}
+
+a {
+  color: #28a745;
+  text-decoration: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-position: inside; 
+  padding-left: 0;            
+  display: inline-block;       
+  text-align: left;            
+}
+
+.about-section {
+  background-color: #e6f0ff; 
+  padding: 30px 0;
+  border-bottom: 2px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section {
+  background-color: #e6f0ff; 
+  padding: 30px 0;
+  border-bottom: 2px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-wrapper {
+  background-color: #e6f0ff; 
+  padding: 40px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section {
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.gender {
+  text-align: left;
+  font-weight: bold;
+}

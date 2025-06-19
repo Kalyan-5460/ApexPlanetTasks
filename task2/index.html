@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Basic Webpage</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="main-header">
+    <h1 >Welcome to My Webpage</h1>
+    <br>
+    <p>This is my first internship task2 using HTML, CSS, and JavaScript.</p>
+  </header>
+<br>  
+    <section class="about-section">
+    <h2>About Me</h2>
+    <p>I’m learning frontend development with ApexPlanet.</p>
+    <h2>My Image</h2>
+    <img src="vinay.jpg" alt="My Image" />
+    <p>Check Out my<br>
+        <a href="https://github.com/Kalyan-5460" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+        </a>
+        <br>
+        <a href="https://www.linkedin.com/in/malapareddy-kalyan-venkat-vinay-12a41b292" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+    </p>
+    </section>
+ <br>
+    <section class="skills-section">
+    <h2>My Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    </section>
+
+<br>
+    <section class="contact-wrapper">
+    <div class="contact-section">
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="tel" id="phone" placeholder="Phone Number" pattern="[0-9]{10}" required />
+        <div class="gender">
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="Male" required /> Male
+            <input type="radio" name="gender" value="Female" required /> Female
+            <input type="radio" name="gender" value="Other" required /> Other
+        </div>
+        <input type="email" id="email" placeholder="Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+        </form>
+    </div>
+    </section>
+
+
+  <footer>
+    <button onclick="showMessage()">Click Me!</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
