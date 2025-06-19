@@ -27,7 +27,7 @@ This repository contains **Task 3** of my **ApexPlanet 45 Days Web Development I
 
 ## 🎥 Live Demo
 🔗 [GitHub Repo](https://github.com/Kalyan-5460/ApexPlanetTasks/tree/main/task3)
-💼 [LinkedIn](https://www.linkedin.com/in/malapareddy-kalyan-venkat-vinay-12a41b292)
+💼 [LinkedIn](https://www.linkedin.com/posts/malapareddy-kalyan-venkat-vinay-12a41b292_apexplanetinternship-internship-task3-activity-7341347078788325376-zAqN?utm_source=share&utm_medium=member_android&rcm=ACoAAEblq_IBNPC_f2HbopMiFU-z9w4v3NAe1oM)
 
 ---
 
