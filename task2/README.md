@@ -29,7 +29,7 @@ This repository contains **Task 2** of my **ApexPlanet 45 Days Web Development I
 ## 🔗 Live Links
 
 - 🔥 [GitHub Repo](https://github.com/Kalyan-5460/ApexPlanetTasks/tree/main/task2)  
-- 💼 [LinkedIn Post](https://www.linkedin.com/in/malapareddy-kalyan-venkat-vinay-12a41b292)
+- 💼 [LinkedIn Post]([https://www.linkedin.com/in/malapareddy-kalyan-venkat-vinay-12a41b292](https://www.linkedin.com/posts/malapareddy-kalyan-venkat-vinay-12a41b292_apexplanetinternship-internship-webdevelopment-activity-7341334421305729024-5JOr?utm_source=share&utm_medium=member_android&rcm=ACoAAEblq_IBNPC_f2HbopMiFU-z9w4v3NAe1oM))
 
 ---
 
