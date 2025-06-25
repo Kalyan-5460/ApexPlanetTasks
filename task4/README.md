@@ -38,7 +38,7 @@ This task focused on **full project implementation** using HTML, CSS, and JavaSc
 
 🔗 Live Links  
 🔥 [GitHub Repo](https://github.com/Kalyan-5460/ApexPlanetTasks/tree/main/task4)  
-💼 LinkedIn Post (coming soon...)
+💼 LinkedIn Post (https://www.linkedin.com/posts/malapareddy-kalyan-venkat-vinay-12a41b292_webdevelopment-html-css-activity-7343576730533511168-h1CF?utm_source=share&utm_medium=member_android&rcm=ACoAAEblq_IBNPC_f2HbopMiFU-z9w4v3NAe1oM).
 
 ---
 
