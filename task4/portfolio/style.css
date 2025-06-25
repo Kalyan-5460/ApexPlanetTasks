@@ -1,0 +1,105 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right,  #2b304aef);
+  color: #333;
+  padding-top: 210px; 
+  padding-bottom: 80px;  
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: lightgoldenrodyellow;
+  padding: 20px;
+  box-shadow: 0 2px 5px gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  border-radius: 0 0 10px 10px;
+}
+
+.user-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid blue;
+}
+
+.college-logo {
+  height: 80px;
+}
+
+.center-name {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.center-name h2 {
+  font-size: 1.8em;
+}
+
+#typewriter-text {
+  color: #2b304aef;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.top-links {
+  margin-top: 10px;
+}
+
+.top-links a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 8px;
+  font-size: 15px;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+section {
+  background: lightgrey;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  z-index: 999;
+}

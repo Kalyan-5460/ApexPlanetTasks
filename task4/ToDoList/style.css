@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-title,
+.goal-title {
+  color: white !important;
+  text-shadow: 
+    0 0 5px white,
+    0 0 10px white,
+    0 0 20px white;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+
+
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: #000000;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 450px;
+  background-color: #0a0a0a;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px #002bff44;
+  border: 2px solid #222;
+}
+
+.todo-app h1 {
+  color: #3399ff;
+  font-size: 1.3rem;
+  text-align: center;
+  text-shadow: 0 0 10px #3366ff;
+  margin-bottom: 15px;
+}
+
+.details h3 {
+  color: #3399ff;
+  font-size: 1.2rem;
+  text-align: center;
+  text-shadow: 0 0 10px #3366ff;
+  margin-bottom: 20px;
+}
+
+.input-area {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: #111;
+  color: #eee;
+}
+
+.input-area input::placeholder {
+  color: #555;
+}
+
+.input-area button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background: #3399ff;
+  border: none;
+  border-radius: 50%;
+  color: #000;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  background: transparent;
+  border-bottom: 1px solid #333;
+  padding: 10px;
+  color: #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list li.completed span {
+  text-decoration: line-through;
+  color: #666;
+}
+
+.task-list li .checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3399ff;
+  border-radius: 50%;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.task-list li .checkbox:checked {
+  background: #3399ff;
+}
+
+.task-list li .checkbox:checked::before {
+  content: "✓";
+  display: block;
+  text-align: center;
+  color: #000;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.task-buttons button {
+  background: #3399ff;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: #000;
+  cursor: pointer;
+}
+
+.stat-container {
+  margin-bottom: 20px;
+}
+
+.progressbar {
+  width: 100%;
+  background: #222;
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: #3399ff;
+  transition: width 0.3s ease;
+}
+
+.stat-numbers {
+  text-align: center;
+  font-size: 1rem;
+  color: #00ccff;
+}
+
+.warning {
+  color: #ff4444;
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 15px;
+}
