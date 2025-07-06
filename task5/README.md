@@ -17,8 +17,8 @@ This project is my final submission for **Task 5** of the ApexPlanet 45 Days Web
 - JavaScript (for feedback & button handling)  
 
 ## 🔗 Links
-- 🔥 GitHub Repo: [https://github.com/Kalyan-5460/ApexPlanetTasks/new/main/task5]  
-- 💼 LinkedIn Post: [Will be added below]
+- 🔥 [GitHub Repo](https://github.com/Kalyan-5460/ApexPlanetTasks/tree/main/task5)    
+- 💼 [LinkedIn Post](https://www.linkedin.com/in/malapareddy-kalyan-venkat-vinay-12a41b292)  
 
 ## 🙋‍♂️ Developer
 Malapareddy Kalyan Venkat Vinay  
