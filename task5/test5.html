@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<head>
+    <title>Study Abroad Exams Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            max-width: 800px;
+            margin: auto;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #1a237e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .quiz-container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .question {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .options label {
+            display: block;
+            margin: 8px 0;
+            cursor: pointer;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .nav-button {
+            padding: 12px 25px;
+            background-color: #1a237e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .nav-button:hover {
+            background-color: #303f9f;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e8eaf6;
+            border-left: 4px solid #1a237e;
+            display: none;
+        }
+        #retry-btn {
+            display: none;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #retry-btn:hover {
+            background-color: #388e3c;
+        }
+        .answer-key, .youtube-links {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f5f5f5;
+            border-radius: 5px;
+            display: none;
+        }
+        .answer-key h3, .youtube-links h3 {
+            margin-top: 0;
+            color: #1a237e;
+        }
+        .youtube-links a {
+            color: #1a237e;
+            text-decoration: none;
+        }
+        .youtube-links a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Study Abroad Exams Quiz</h1>
+        <p>Test your knowledge of GRE, TOEFL & IELTS</p>
+    </header>
+
+    <div class="quiz-container">
+        <div class="question">
+            <h3>1. How long are GRE scores valid?</h3>
+            <div class="options">
+                <label><input type="radio" name="q1" value="a"> 1 year</label>
+                <label><input type="radio" name="q1" value="b"> 2 years</label>
+                <label><input type="radio" name="q1" value="c"> 5 years</label>
+                <label><input type="radio" name="q1" value="d"> 10 years</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Which section is NOT part of the TOEFL iBT?</h3>
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> Reading</label>
+                <label><input type="radio" name="q2" value="b"> Listening</label>
+                <label><input type="radio" name="q2" value="c"> Quantitative</label>
+                <label><input type="radio" name="q2" value="d"> Speaking</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. What is the maximum possible IELTS band score?</h3>
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> 7</label>
+                <label><input type="radio" name="q3" value="b"> 8</label>
+                <label><input type="radio" name="q3" value="c"> 9</label>
+                <label><input type="radio" name="q3" value="d"> 10</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4. Which exam is primarily for graduate school admissions?</h3>
+            <div class="options">
+                <label><input type="radio" name="q4" value="a"> TOEFL</label>
+                <label><input type="radio" name="q4" value="b"> IELTS</label>
+                <label><input type="radio" name="q4" value="c"> GRE</label>
+                <label><input type="radio" name="q4" value="d"> All of the above</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. How long is the TOEFL iBT test approximately?</h3>
+            <div class="options">
+                <label><input type="radio" name="q5" value="a"> 2 hours</label>
+                <label><input type="radio" name="q5" value="b"> 3 hours</label>
+                <label><input type="radio" name="q5" value="c"> 4 hours</label>
+                <label><input type="radio" name="q5" value="d"> 5 hours</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6. Which IELTS version is for academic purposes?</h3>
+            <div class="options">
+                <label><input type="radio" name="q6" value="a"> Academic</label>
+                <label><input type="radio" name="q6" value="b"> General Training</label>
+                <label><input type="radio" name="q6" value="c"> Professional</label>
+                <label><input type="radio" name="q6" value="d"> Standard</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7. What is the maximum TOEFL iBT score?</h3>
+            <div class="options">
+                <label><input type="radio" name="q7" value="a"> 100</label>
+                <label><input type="radio" name="q7" value="b"> 120</label>
+                <label><input type="radio" name="q7" value="c"> 150</label>
+                <label><input type="radio" name="q7" value="d"> 200</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8. Which exam has a one-on-one speaking test component?</h3>
+            <div class="options">
+                <label><input type="radio" name="q8" value="a"> GRE</label>
+                <label><input type="radio" name="q8" value="b"> TOEFL</label>
+                <label><input type="radio" name="q8" value="c"> IELTS</label>
+                <label><input type="radio" name="q8" value="d"> Both TOEFL and IELTS</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9. How many sections are there in the GRE General Test?</h3>
+            <div class="options">
+                <label><input type="radio" name="q9" value="a"> 2</label>
+                <label><input type="radio" name="q9" value="b"> 3</label>
+                <label><input type="radio" name="q9" value="c"> 4</label>
+                <label><input type="radio" name="q9" value="d"> 5</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10. Which organization administers the TOEFL?</h3>
+            <div class="options">
+                <label><input type="radio" name="q10" value="a"> British Council</label>
+                <label><input type="radio" name="q10" value="b"> IDP</label>
+                <label><input type="radio" name="q10" value="c"> ETS</label>
+                <label><input type="radio" name="q10" value="d"> Cambridge Assessment</label>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="home.html" class="nav-button">Go to Home</a>
+            <button id="submit-btn" class="nav-button">Submit</button>
+        </div>
+
+        <div id="result"></div>
+        <button id="retry-btn">Retry Quiz</button>
+
+        <div class="answer-key" id="answer-key">
+            <h3>Answer Key:</h3>
+            <ol>
+                <li><strong>C</strong> - 5 years</li>
+                <li><strong>C</strong> - Quantitative</li>
+                <li><strong>C</strong> - 9</li>
+                <li><strong>C</strong> - GRE</li>
+                <li><strong>B</strong> - 3 hours</li>
+                <li><strong>A</strong> - Academic</li>
+                <li><strong>B</strong> - 120</li>
+                <li><strong>C</strong> - IELTS</li>
+                <li><strong>B</strong> - 3 (Verbal, Quantitative, Analytical Writing)</li>
+                <li><strong>C</strong> - ETS</li>
+            </ol>
+        </div>
+
+        <div class="youtube-links" id="youtube-links">
+            <h3>For More Information, Follow These YouTube Links:</h3>
+            <ul>
+                <li><a href="https://youtu.be/tZ1Pgoj0cbw?si=fTC0Qn9nuvZLZsiE" target="_blank">Top 3 GRE Study Materials you need</a></li>
+                <li><a href="https://youtu.be/zpV9oIlAfPk?si=6i9X8yRAsrm8HlXX" target="_blank">TOEFL Preparation Plan!</a></li>
+                <li><a href="https://youtube.com/shorts/vTzhaGz5A0c?si=2qS3LpiKR_Ts75H-" target="_blank">IELTS Band 9 Strategies</a></li>
+                <li><a href="https://www.idp.com/india/" target="_blank">Study Abroad Process Explained</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Study Abroad Exam Quiz. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            const answers = {
+                q1: "c",
+                q2: "c",
+                q3: "c",
+                q4: "c",
+                q5: "b",
+                q6: "a",
+                q7: "b",
+                q8: "c",
+                q9: "b",
+                q10: "c"
+            };
+
+            let score = 0;
+            for (let i = 1; i <= 10; i++) {
+                const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedOption && selectedOption.value === answers[`q${i}`]) {
+                    score++;
+                }
+            }
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `<h3>Your Score: ${score}/10</h3>`;
+            
+            // Add feedback based on score
+            if (score >= 8) {
+                resultDiv.innerHTML += "<p>Excellent! You have great knowledge about study abroad exams.</p>";
+            } else if (score >= 5) {
+                resultDiv.innerHTML += "<p>Good job! You know quite a bit, but there's room for improvement.</p>";
+            } else {
+                resultDiv.innerHTML += "<p>Keep studying! Review the material and try again.</p>";
+            }
+            
+            resultDiv.style.display = 'block';
+
+            document.getElementById('answer-key').style.display = 'block';
+            document.getElementById('youtube-links').style.display = 'block';
+            document.getElementById('retry-btn').style.display = 'block';
+        });
+
+        document.getElementById('retry-btn').addEventListener('click', function() {
+            const radioButtons = document.querySelectorAll('input[type="radio"]');
+            radioButtons.forEach(button => {
+                button.checked = false;
+            });
+
+            document.getElementById('result').style.display = 'none';
+            document.getElementById('answer-key').style.display = 'none';
+            document.getElementById('youtube-links').style.display = 'none';
+            document.getElementById('retry-btn').style.display = 'none';
+        });
+    </script>
+</body>
+</html>

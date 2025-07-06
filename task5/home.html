@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning Portal</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: lightgoldenrodyellow;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Header styling */
+        .header {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px gray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative; /* Needed for absolute positioning */
+        }
+
+        .user-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 2px solid blue;
+        }
+
+        .college-logo {
+            height: 100px;
+        }
+
+        .center-name {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        .center-name h2 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .center-name p {
+            font-size: 1em;
+            margin: 5px 0 0 0;
+        }
+
+        .main-body, .footer {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px gray;
+        }
+
+        .topic-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid silver;
+        }
+
+        .learn-btn {
+            background: #1a237e;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+
+        .footer-content {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            margin: 10px 0;
+        }
+
+        .submit-btn {
+            background: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            float: right;
+        }
+
+        .success {
+            color: green;
+            display: none;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with centered name -->
+    <div class="header">
+        <img src="vinayphoto.jpg" class="user-photo">
+        <div class="center-name">
+            <h2>GradElevate</h2>
+            <p>After B-Tech: Your Guide to Competitive Exams & Careers</p>
+        </div>
+        <img src="vignanlogo.png" class="college-logo">
+    </div>
+
+    <div class="main-body">
+        <h2>Learning Topics</h2>
+        <div class="topic-item">
+            <span>1. GATE (Graduate Aptitude Test in Engineering)</span>
+            <a href="learn1.html">
+            <button class="learn-btn">Learn</button>
+             </a>
+        </div>
+        <div class="topic-item">
+            <span>2. UPSC Civil Services Exam</span>
+            <a href="learn2.html">
+            <button class="learn-btn">Learn</button>
+        </a>
+        </div>
+        <div class="topic-item">
+            <span>3. ISRO / DRDO Scientist Exam</span>
+            <a href="learn3.html">
+            <button class="learn-btn">Learn</button>
+        </a>
+        </div>
+        <div class="topic-item">
+            <span>4. CAT (Common Admission Test)</span>
+            <a href="learn4.html">
+            <button class="learn-btn">Learn</button>
+        </a>
+        </div>
+        <div class="topic-item">
+            <span>5. GRE / TOEFL / IELTS (for Study Abroad)</span>
+            <a href="learn5.html">
+            <button class="learn-btn">Learn</button>
+        </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div style="flex:1">
+                <h2>Contact Us:</h2>
+                <p><strong>Name:</strong>Malapareddy Kalyan Venkat Vinay</p>
+                <p><strong>Email:</strong>vinaymalapareddy@gmail.com</p>
+                <p><strong>Contact:</strong>+91 7993292561</p>
+            </div>
+            <div style="flex:1; min-width: 300px;">
+                <h2>Feedback</h2>
+                <textarea id="feedbackInput" placeholder="Enter your feedback..."></textarea>
+                <button onclick="submitFeedback()">Submit</button>
+                <div id="successMsg" style="display:none; color: green;">Feedback submitted successfully!</div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function submitFeedback() {
+            const feedback = document.getElementById("feedbackInput").value.trim();
+    
+            if (feedback === "") {
+                alert("Feedback is empty! Please enter something.");
+                return; 
+            }
+    
+            document.getElementById("successMsg").style.display = "block";
+            setTimeout(() => {
+                document.getElementById("successMsg").style.display = "none";
+            }, 2000);
+        }
+    </script>
+    
+</body>
+</html>

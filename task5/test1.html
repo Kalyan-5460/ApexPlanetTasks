@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GATE Exam Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            max-width: 800px;
+            margin: auto;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #1a237e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .quiz-container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .question {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .options label {
+            display: block;
+            margin: 8px 0;
+            cursor: pointer;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .nav-button {
+            padding: 12px 25px;
+            background-color: #1a237e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .nav-button:hover {
+            background-color: #303f9f;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e8eaf6;
+            border-left: 4px solid #1a237e;
+            display: none;
+        }
+        #retry-btn {
+            display: none;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #retry-btn:hover {
+            background-color: #388e3c;
+        }
+        .answer-key, .youtube-links {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f5f5f5;
+            border-radius: 5px;
+            display: none;
+        }
+        .answer-key h3, .youtube-links h3 {
+            margin-top: 0;
+            color: #1a237e;
+        }
+        .youtube-links a {
+            color: #1a237e;
+            text-decoration: none;
+        }
+        .youtube-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GATE Exam Quiz</h1>
+        <p>Test your knowledge about the Graduate Aptitude Test in Engineering</p>
+    </header>
+
+    <div class="quiz-container">
+        <div class="question">
+            <h3>1. What does GATE stand for?</h3>
+            <div class="options">
+                <label><input type="radio" name="q1" value="A"> Graduate Assessment Test in Engineering</label>
+                <label><input type="radio" name="q1" value="B"> Graduate Aptitude Test in Engineering</label>
+                <label><input type="radio" name="q1" value="C"> General Aptitude Test for Engineers</label>
+                <label><input type="radio" name="q1" value="D"> Government Aptitude Test for Engineers</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>2. Which organizations conduct the GATE exam?</h3>
+            <div class="options">
+                <label><input type="radio" name="q2" value="A"> IITs and NITs</label>
+                <label><input type="radio" name="q2" value="B"> IISc and IITs</label>
+                <label><input type="radio" name="q2" value="C"> AICTE and UGC</label>
+                <label><input type="radio" name="q2" value="D"> CBSE and State Boards</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>3. What is the duration of the GATE exam?</h3>
+            <div class="options">
+                <label><input type="radio" name="q3" value="A"> 2 hours</label>
+                <label><input type="radio" name="q3" value="B"> 2.5 hours</label>
+                <label><input type="radio" name="q3" value="C"> 3 hours</label>
+                <label><input type="radio" name="q3" value="D"> 4 hours</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>4. How many marks are deducted for a wrong answer in a 1-mark MCQ?</h3>
+            <div class="options">
+                <label><input type="radio" name="q4" value="A"> 0.25 marks</label>
+                <label><input type="radio" name="q4" value="B"> 0.33 marks</label>
+                <label><input type="radio" name="q4" value="C"> 0.50 marks</label>
+                <label><input type="radio" name="q4" value="D"> 1 mark</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>5. Which of these is NOT a benefit of qualifying GATE?</h3>
+            <div class="options">
+                <label><input type="radio" name="q5" value="A"> Admission to M.Tech programs</label>
+                <label><input type="radio" name="q5" value="B"> Recruitment in PSUs</label>
+                <label><input type="radio" name="q5" value="C"> Direct entry into IAS</label>
+                <label><input type="radio" name="q5" value="D"> Scholarships for higher education</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>6. How many subjects (papers) are available in GATE?</h3>
+            <div class="options">
+                <label><input type="radio" name="q6" value="A"> 15</label>
+                <label><input type="radio" name="q6" value="B"> 25</label>
+                <label><input type="radio" name="q6" value="C"> 29</label>
+                <label><input type="radio" name="q6" value="D"> 35</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>7. Which section is common in all GATE papers?</h3>
+            <div class="options">
+                <label><input type="radio" name="q7" value="A"> Engineering Mathematics</label>
+                <label><input type="radio" name="q7" value="B"> General Aptitude</label>
+                <label><input type="radio" name="q7" value="C"> Technical Section</label>
+                <label><input type="radio" name="q7" value="D"> Programming Skills</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>8. Which PSU recruits candidates based on GATE scores?</h3>
+            <div class="options">
+                <label><input type="radio" name="q8" value="A"> BHEL</label>
+                <label><input type="radio" name="q8" value="B"> ONGC</label>
+                <label><input type="radio" name="q8" value="C"> IOCL</label>
+                <label><input type="radio" name="q8" value="D"> All of the above</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>9. What type of questions does NOT have negative marking in GATE?</h3>
+            <div class="options">
+                <label><input type="radio" name="q9" value="A"> Multiple Choice Questions (MCQs)</label>
+                <label><input type="radio" name="q9" value="B"> Numerical Answer Type (NAT) questions</label>
+                <label><input type="radio" name="q9" value="C"> Both have negative marking</label>
+                <label><input type="radio" name="q9" value="D"> None of the above</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <h3>10. What is the best way to prepare for GATE?</h3>
+            <div class="options">
+                <label><input type="radio" name="q10" value="A"> Memorizing formulas</label>
+                <label><input type="radio" name="q10" value="B"> Solving previous year papers</label>
+                <label><input type="radio" name="q10" value="C"> Ignoring General Aptitude</label>
+                <label><input type="radio" name="q10" value="D"> Studying only one subject</label>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="home.html" class="nav-button">Go to Home</a>
+            <button id="submit-btn" class="nav-button">Submit</button>
+        </div>
+
+        <div id="result"></div>
+        <button id="retry-btn">Retry Quiz</button>
+
+        <div class="answer-key" id="answer-key">
+            <h3>Answer Key:</h3>
+            <ol>
+                <li><strong>B</strong> - Graduate Aptitude Test in Engineering</li>
+                <li><strong>B</strong> - IISc and IITs</li>
+                <li><strong>C</strong> - 3 hours</li>
+                <li><strong>B</strong> - 0.33 marks</li>
+                <li><strong>C</strong> - Direct entry into IAS</li>
+                <li><strong>C</strong> - 29</li>
+                <li><strong>B</strong> - General Aptitude</li>
+                <li><strong>D</strong> - All of the above</li>
+                <li><strong>B</strong> - Numerical Answer Type (NAT) questions</li>
+                <li><strong>B</strong> - Solving previous year papers</li>
+            </ol>
+        </div>
+
+        <div class="youtube-links" id="youtube-links">
+            <h3>For More Information, Follow These YouTube Links:</h3>
+            <ul>
+                <li><a href="https://youtube.com/playlist?list=PLIU86IV5HmhRviv1-JgsAK9B4Omj8nKP1&si=X7qaYFUmBPc5nWWA" target="_blank">GATE Exam Complete Guide</a></li>
+                <li><a href="https://youtu.be/El7vsId73HI?si=dqTe7T0U5upMUqOQ" target="_blank">How to Crack GATE in First Attempt</a></li>
+                <li><a href="https://youtu.be/fEQd43lg9x8?si=Vtf7miPDMTm-N6_S" target="_blank">How to prepare for GATE exam without coaching</a></li>
+                <li><a href="https://gate2025.iitr.ac.in/" target="_blank">Gate official Website</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            const answers = {
+                q1: "B",
+                q2: "B",
+                q3: "C",
+                q4: "B",
+                q5: "C",
+                q6: "C",
+                q7: "B",
+                q8: "D",
+                q9: "B",
+                q10: "B"
+            };
+
+            let score = 0;
+            for (let i = 1; i <= 10; i++) {
+                const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedOption && selectedOption.value === answers[`q${i}`]) {
+                    score++;
+                }
+            }
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `<h3>Your Score: ${score}/10</h3>`;
+            resultDiv.style.display = 'block';
+
+            document.getElementById('answer-key').style.display = 'block';
+            document.getElementById('youtube-links').style.display = 'block';
+            document.getElementById('retry-btn').style.display = 'block';
+        });
+
+        document.getElementById('retry-btn').addEventListener('click', function() {
+            const radioButtons = document.querySelectorAll('input[type="radio"]');
+            radioButtons.forEach(button => {
+                button.checked = false;
+            });
+
+            document.getElementById('result').style.display = 'none';
+            document.getElementById('answer-key').style.display = 'none';
+            document.getElementById('youtube-links').style.display = 'none';
+            document.getElementById('retry-btn').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
